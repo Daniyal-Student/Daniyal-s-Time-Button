@@ -1,7 +1,5 @@
-/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-/* Base body and html styling */
 body, html {
     margin: 0;
     padding: 0;
@@ -13,26 +11,24 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* Fullscreen button styling */
 .fullscreen-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: transparent; /* Transparent background */
+    background: transparent; 
     border: none;
-    color: #ffffff; /* White icon */
+    color: #ffffff; 
     font-size: 1.5em;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 4px;
-    transition: color 0.3s; /* Smooth color transition on hover */
+    transition: color 0.3s; 
 }
 
 .fullscreen-btn:hover {
-    color: #00ffcc; /* Hover color for the icon */
+    color: #00ffcc; 
 }
 
-/* Prompt container to keep prompt and buttons together */
 .prompt-container {
     display: flex;
     flex-direction: column;
@@ -40,7 +36,6 @@ body, html {
     position: relative;
 }
 
-/* Message text with pulse effect */
 .message-text {
     font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
@@ -49,14 +44,12 @@ body, html {
     animation: pulse 2s infinite;
 }
 
-/* Button container styling */
 .button-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* YES and NO buttons */
 .dialog-button {
     width: 80px;
     margin: 0 10px;
@@ -74,7 +67,6 @@ body, html {
     background-color: #d0d0d0;
 }
 
-/* Clock container styling */
 .clock-container {
     font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
@@ -82,23 +74,22 @@ body, html {
     text-align: center;
     position: fixed;
     top: 50%;
-    left: 100vw; /* Start fully off-screen to the right */
+    left: 100vw; 
     transform: translateY(-50%);
-    opacity: 0; /* Hidden initially */
-    width: 80%; /* Make it more rectangular */
+    opacity: 0;
+    width: 80%;
     padding: 20px 0;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: nowrap;
 }
 
-/* Slide-in-right animation for the clock */
 @keyframes slideInRight {
     0% {
-        left: 100vw; /* Start fully off-screen to the right */
+        left: 100vw;
         opacity: 0;
     }
     100% {
         left: 50%;
-        transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+        transform: translate(-50%, -50%);
         opacity: 1;
     }
 }
@@ -107,7 +98,6 @@ body, html {
     animation: slideInRight 0.5s forwards;
 }
 
-/* Slide-out-left animation for prompt */
 @keyframes slideOutLeft {
     0% {
         transform: translateX(0);
@@ -123,7 +113,6 @@ body, html {
     animation: slideOutLeft 0.5s forwards;
 }
 
-/* Pulse animation for the text */
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
