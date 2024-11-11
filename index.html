@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniyal's Clock</title>
+    <link rel="icon" href="hourglass.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Fullscreen Button -->
+    <button id="fullscreen-btn" class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+
+    <!-- Prompt Container -->
+    <div class="prompt-container">
+        <!-- Time Prompt -->
+        <div class="message-text">Do you want to know the time?</div>
+
+        <!-- Button Container -->
+        <div class="button-container">
+            <button class="dialog-button" onclick="startClock()">YES</button>
+            <button class="dialog-button" onclick="closeWindow()">NO</button>
+        </div>
+    </div>
+
+    <!-- Clock Display (Initially Hidden) -->
+    <div id="clock" class="clock-container"></div>
+
+</body>
+</html>
